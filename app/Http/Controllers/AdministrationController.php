@@ -202,6 +202,7 @@ class AdministrationController extends Controller
                     "UserID" => $request->session()->get('UserID'),
                     "User to restore" => $userId
                 ));
+                // Display Admin page
                 return $this->displayAdminPage($request)->with([
                     'message' => 'You cannot perform this action on yourself.'
                 ]);
