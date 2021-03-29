@@ -35,6 +35,7 @@ class AdministrationController extends Controller
      */
     public function displayAdminPage(Request $request)
     {
+        // Call Logger on method entry
         $this->logger->info("Enter AdministrationController.displayAdminPage()");
         $service = new SecurityService($this->logger);
 
