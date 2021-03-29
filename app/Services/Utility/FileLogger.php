@@ -13,7 +13,7 @@ class FileLogger implements ILoggerService
     
     public function __construct(){
         self::$logger = new Logger('MyApp');
-        $stream = new StreamHandler('storage/logs/connectapp.log', Logger::DEBUG);
+        $stream = new StreamHandler('php://stdout', Logger::DEBUG);
         $stream->setFormatter(new LineFormatter("%datetime% : %level_name% : %message% %context%\n", "g:iA n/j/Y"));
         self::$logger->pushHandler($stream);
     }
