@@ -197,7 +197,7 @@ class AdministrationController extends Controller
             }
             else
             {
-                // Return admin page with error message
+                // Return admins page with error message
                 $this->logger->info("Exit AdministrationController.unsuspendUser() with failure: user attemped to restore themselves.", array(
                     "UserID" => $request->session()->get('UserID'),
                     "User to restore" => $userId
