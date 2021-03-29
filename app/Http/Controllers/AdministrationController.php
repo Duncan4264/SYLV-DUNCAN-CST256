@@ -64,6 +64,7 @@ class AdministrationController extends Controller
             $this->logger->warn("Exit AdministrationController.displayAdminPage() with failure: UserID is not that of an admin.", array(
                 "UserID" => $request->session()->get('UserID')
             ));
+            // Weclome Controller
             $w = new WelcomeController($this->logger);
             return $w->index($request)->with([
                 'message' => 'You do not have permission to view this page.'
