@@ -31,7 +31,7 @@ class JobRestController extends Controller
     {
         try
         {
-            
+            // Call the logger
             $this->logger->info("Enter JobRestController.index()");
             
             //call service to get all jobs
