@@ -101,6 +101,7 @@ class AuthenticationController extends Controller
                 ]);
             }
         }
+        // Catch Exception
         catch (DatabaseException $e)
         {
             // Log database exception
