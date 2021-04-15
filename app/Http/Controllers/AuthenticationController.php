@@ -95,6 +95,7 @@ class AuthenticationController extends Controller
                 $this->logger->info("Enter AuthenticationController.registerNewUser() with failure: the registration operation failed.", array(
                     "user" => $reg
                 ));
+                // Return a view
                 return view("registerandlogin")->with([
                     'user' => $reg,
                     'message' => "There was an error during registration."
