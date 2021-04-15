@@ -41,6 +41,7 @@ class AuthenticationController extends Controller
 
         try
         {
+            // Validate Request
             $request->validate(RegistrationModel::getRules());
 
             // Request parameters
