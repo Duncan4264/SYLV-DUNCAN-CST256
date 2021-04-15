@@ -37,7 +37,7 @@ class UserService
      */
     public function __construct($logger)
     {
-        $this->db = DataService::connect();
+        $this->db = DataService->connect();
         $this->logger = $logger;
     }
 
