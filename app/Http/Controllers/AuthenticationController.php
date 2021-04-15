@@ -15,7 +15,7 @@ use App\Models\RegistrationModel;
  */
 class AuthenticationController extends Controller
 {
-
+    // Create logger variable
     private $logger;
     
     /**
