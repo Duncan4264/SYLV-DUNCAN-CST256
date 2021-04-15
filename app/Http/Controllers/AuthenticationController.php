@@ -36,6 +36,7 @@ class AuthenticationController extends Controller
      */
     public function registerNewUser(Request $request)
     {
+        // Call the Logger
         $this->logger->info("Enter AuthenticationController.registerNewUser()");
 
         try
